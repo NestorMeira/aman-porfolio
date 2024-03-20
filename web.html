@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://db.onlinewebfonts.com/c/20e9fce1ca54ce1d7b7a7329de9bdaef?family=Gistesy" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+
+        <div class="principal">
+
+          <button class="inicio" ><a href="index.html"><i class="fas fa-home"></i>Inicio</a></button>
+            <p style="margin-top: -8px;">Aman</p>
+            <h1>Páginas web</h1>
+            <div class="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="content">
+                       <div class="diseño" id="planes">
+                        <h3 class="diseños">Páginas realizadas</h3>
+                        <a href="https://ibceldorado.com.ar/" target="_blank"> <img src="imagenes/diseño4.png" alt="imagen"></a>   
+                       </div>          
+                    </div>
+                  </div>
+    
+                  <div class="carousel-item">
+                    <div class="content"> 
+                   <div class="diseño"id="planes1">
+                    <h3 class="diseños">Páginas realizadas</h3>
+                  <a href="https://www.idecel.com.ar/" target="_blank"> <img src="imagenes/diseño5.png" alt="imagen"></a>
+                   </div>
+                    </div>
+                  </div>
+    
+                  <div class="carousel-item">
+                    <div class="content">
+                  <div class="diseño" id="planes2">
+                       <h3 class="diseños">Páginas realizadas</h3>
+                    <a href="https://www.artesaniastierracolorada.com.ar/" target="_blank"> <img src="imagenes/diseño6.png" alt="imagen"></a>
+                  </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="content">
+                  <div class="diseño" id="planes3">
+                       <h3 class="diseños">Páginas realizadas</h3>
+                       <a href="https://adhesive-houses.surge.sh/" target="_blank"> <img src="imagenes/diseño1.png" alt="imagen"></a>
+                  </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="content">
+                  <div class="diseño" id="planes4">
+                       <h3 class="diseños">Páginas realizadas</h3>
+                    <a href="https://nestormeira.github.io/ecomerce-plantas-basico/" target="_blank"> <img src="imagenes/diseño7.png" alt="imagen"></a>
+                  </div>
+                    </div>
+                  </div>
+    
+                </div>
+                <button class="prev" onclick="changeSlide(-1)"><i class="fas fa-arrow-left" id="atras"></i></button>
+                <button class="next" onclick="changeSlide(1)"><i class="fas fa-arrow-right" id="adelante"></i></button>       </div>    
+            </div>
+
+
+        <script>
+            let slideIndex = 1; // Inicializa el índice en 1 en lugar de 0
+            showSlides(slideIndex);
+            
+            function showSlides(n) {
+              let slides = document.getElementsByClassName("carousel-item");
+              if (n > slides.length) {slideIndex = 1} // Si el índice supera la cantidad de diapositivas, regresa al principio
+              if (n < 1) {slideIndex = slides.length} // Si el índice es menor que 1, muestra la última diapositiva
+              for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slides[slideIndex-1].style.display = "block"; // Muestra la diapositiva actual
+            }
+            
+            function changeSlide(n) {
+              showSlides(slideIndex += n);
+            }
+
+            const plan = document.getElementById('planes');
+            const plan1 = document.getElementById('planes1');
+            const plan2 = document.getElementById('planes2');
+            const plan3 = document.getElementById('planes3');
+            const plan4 = document.getElementById('planes4');
+
+const adelante = document.getElementById('adelante');
+
+const atras = document.getElementById('atras');
+
+adelante.onclick = () => {
+   
+    plan.classList.add('moveRightAnimation');
+    plan1.classList.add('moveRightAnimation');
+    plan2.classList.add('moveRightAnimation');
+    plan3.classList.add('moveRightAnimation');
+    plan4.classList.add('moveRightAnimation');
+    setTimeout(() => {
+        plan.classList.remove('moveRightAnimation');
+    }, 500); 
+};
+atras.onclick = () => {
+   
+   plan.classList.add('moveRightAnimation2');
+   plan1.classList.add('moveRightAnimation2');
+   plan2.classList.add('moveRightAnimation2');
+   plan3.classList.add('moveRightAnimation');
+   plan4.classList.add('moveRightAnimation');
+   setTimeout(() => {
+       plan.classList.remove('moveRightAnimation');
+   }, 500); 
+};
+
+
+            </script>
+            
+   
+</body>
+</html>
