@@ -8,14 +8,22 @@
     <link href="https://db.onlinewebfonts.com/c/20e9fce1ca54ce1d7b7a7329de9bdaef?family=Gistesy" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
+   <style>
+    @media (max-width: 550px) {
+      .diseño{
+            margin-left: -6px;
+        }
+    }
+</style>
+  </head>
 <body>
 
 
         <div class="principal">
 
           <button class="inicio" ><a href="index.html"><i class="fas fa-home"></i>Inicio</a></button>
-            <p style="margin-top: -8px;">Aman</p>
+            
+          <p style="margin-top: -8px;">Aman</p>
             <h1>Páginas web</h1>
             <div class="carousel">
                 <div class="carousel-inner">
@@ -114,10 +122,10 @@ atras.onclick = () => {
    plan.classList.add('moveRightAnimation2');
    plan1.classList.add('moveRightAnimation2');
    plan2.classList.add('moveRightAnimation2');
-   plan3.classList.add('moveRightAnimation');
-   plan4.classList.add('moveRightAnimation');
+   plan3.classList.add('moveRightAnimation2');
+   plan4.classList.add('moveRightAnimation2');
    setTimeout(() => {
-       plan.classList.remove('moveRightAnimation');
+       plan.classList.remove('moveRightAnimation2');
    }, 500); 
 };
 

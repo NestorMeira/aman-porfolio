@@ -62,7 +62,7 @@ body{
 .principal p{
     font-family:gistesy ;
     font-size: 5rem;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-bottom: 10px;
     color: #04add8;
     text-shadow: 0 0 10px rgb(4, 29, 38) , 0 0 20px rgb(9, 196, 234) , 0 0 30px rgb(101, 206, 255) , 0 0 40px #00d5ff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
@@ -238,7 +238,9 @@ body{
     /* Estilos para el elemento plan */
     transition: opacity 0.8s ease; /* Transición para suavizar el cambio de opacidad */
 }
-
+.moveRightAnimation2 {
+    animation: moveLeft 0.5s ease;
+}
 .moveRightAnimation {
     animation: moveRight 0.5s ease;
 }
@@ -249,9 +251,55 @@ body{
     50% { transform: translateX(15px); opacity: 0.1; } /* 50% de la animación */
     100% { transform: translateX(0); opacity: 1; } /* Fin de la animación */
 }
-.moveRightAnimation2{
-    animation: moveRight 0.5s ease;
+@keyframes moveLeft {
+    0% { transform: translateX(0); opacity: 1; } /* Inicio de la animación */
+    50% { transform: translateX(-15px); opacity: 0.1; } /* 50% de la animación */
+    100% { transform: translateX(0); opacity: 1; } /* Fin de la animación */
 }
+
+
+
+
+
+/*CONTACTO*/
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.contacto a{
+    text-decoration: none;
+    margin-top: 30px;
+    color: aliceblue;
+    font-size: 1.2rem;
+    text-align: center;
+    border: 2px solid #0691b4c3 ;
+    width: 50%;
+    height: 150px;
+    box-shadow: 0 0 5px rgb(11, 163, 186);
+   
+}
+.contacto i{
+    width: 40px;
+    height: 40px;
+    font-size: 2.3rem;
+    margin: 10px 0;
+    color: rgb(6, 178, 205);
+
+}
+
+.contacto a h3{
+margin-bottom: 10px;
+text-shadow: 1px 1px 2px rgba(3, 44, 52, 0.824);
+}
+.contacto a span{
+    margin: 6px 0;
+    letter-spacing: 0.6px;
+    text-shadow: 1px 1px 2px rgba(3, 44, 52, 0.824);
+}
+
 
 /*RESPONSIVE*/
 
@@ -260,11 +308,10 @@ body{
         margin: 0;
         border-radius: 0px;
         width: 100%;
-        height: 640px;
+        height: 680px;
     }
     .principal p{
         margin-top: 20px;
-       
         }
         .principal h1{
             font-size: 1.4rem;
@@ -275,18 +322,18 @@ body{
         
         }
         .carousel .prev {
-           margin-left: -70px;
+           margin-left: -60px;
           }
           
           .carousel .next {
-            margin-left: 250px;
+            margin-left: 245px;
           }
           .carousel button i{
             font-size: 1.9rem;
           }
 
           .principal .inicio{
-            margin-left: -310px;
+            margin-left: -290px;
        
         }
         .principal .inicio a{
@@ -300,8 +347,31 @@ body{
           
         }
         .diseño{
-     
             height: 410px;
+        }
+
+        .contacto a{
+           width: 75%;
+           height: 162px;
+        }
+        .contacto i{
+            width: 40px;
+            height: 40px;
+            font-size: 2.3rem;
+            margin: 10px 0;
+            color: rgb(6, 178, 205);
         
         }
+        
+        .contacto a h3{
+        margin-bottom: 10px;
+        text-shadow: 1px 1px 2px rgba(3, 44, 52, 0.967);
+        }
+        .contacto a span{
+            margin: 6px 0;
+            letter-spacing: 0.5px;
+            text-shadow: 1px 1px 2px rgba(3, 44, 52, 0.927);
+            font-size: 1.1rem;
+        }
+        
 }
