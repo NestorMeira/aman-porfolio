@@ -1,27 +1,233 @@
 <!DOCTYPE html>
-<html lang="en">
+<meta name="language" content="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aman</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link href="https://db.onlinewebfonts.com/c/20e9fce1ca54ce1d7b7a7329de9bdaef?family=Gistesy" rel="stylesheet">
+    <meta name="keywords" content="creación de páginas web, community manager, diseño UX-UI, diseño web, posicionamiento SEO">
+    <title>Diseños Aman </title>
+    <meta name="author" content="Nestor Meira - Diseños Aman">
+    <meta name="description" content="Diseños Aman ofrece servicios de creación de páginas web, Community Manager y diseño UX-UI. ¡Contáctanos para obtener soluciones creativas y efectivas para tu presencia en línea!">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16 32x32">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F7QEMDG379"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F7QEMDG379');
+</script>
+   <style>
+
+@font-face {
+    font-family: "Lato";
+    src: url('698242188-Lato-Bla.eot');
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url('imagenes/2.png');
+    background-size: cover;
+
+}
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('imagenes/2.png');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-bottom: 10PX;
+    width: 500px;
+    height: 620px;
+    box-shadow: 0 0 20px rgb(16, 223, 255);
+    border-radius: 10px;
+    font-family: 'Lato';
+}
+.principal .inicio{
+    background-color: transparent;
+    position: absolute;
+    width: 70px;
+    margin-left: -410px;
+  margin-top: 0px;
+}
+.principal .inicio a{
+    color: #04add8;
+    font-size: 1rem;
+    width: 70px;
+   
+  
+}
+.principal .inicio a i{
+ padding-right:4px ;
+ font-size: 1.1rem;
+  
+}
+.principal .inicio a:hover{
+    color: #37d7ff;
+    font-size: 16.4px;
+}
+.logo{
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 0 20px rgb(16, 223, 255);
+    border-radius: 200px;
+    margin: 15px 0;
+    filter: brightness(1.5);
+    animation: spin 5s linear, luz 10s; /* animación de rotación */
+    
+    transform-style: preserve-3d; /* Mantiene la imagen en 3D */
+}
+@keyframes spin {
+    0% {
+      transform: rotateY(0deg); /* Rotación inicial */
+    }
+    100% {
+      transform: rotateY(360deg); /* Rotación completa */
+    }
+    
+  }
+  
+
+@keyframes luz {
+    0% { opacity: 1; } /* Inicio de la animación */
+    50% {  opacity: 0.1; } /* 50% de la animación */
+    100% { opacity: 1; } /* Fin de la animación */
+}
+
+.principal h1{
+    color: rgb(223, 227, 230);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.principal h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(223, 227, 230);
+    font-weight: normal;
+    font-size: 1.1rem;
+    letter-spacing: 0.6px;
+}
+.principal button{
+    width: 230px;
+    height: 48px;
+    background-color: #0691b4c3;
+    border: none;
+    border-radius: 20px;
+    margin-top: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.principal button a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.principal .link:active{
+    width: 226px;
+    height: 45px;
+    font-size: 1rem;
+    box-shadow: 0 0 10px rgba(16, 223, 255, 0.9);
+}
+/*RESPONSIVE*/
+
+@media (max-width:550px){
+    .principal{
+        margin: 0;
+        border-radius: 0px;
+        width: 100%;
+        height: 750px;
+    }
+    .principal p{
+        margin-top: 20px;
+        }
+        .principal h1{
+            font-size: 1.4rem;
+         
+        }
+        .principal h2{
+            font-size: 1rem;
+        
+        }
+        .carousel .prev {
+           margin-left: -60px;
+          }
+          
+          .carousel .next {
+            margin-left: 245px;
+          }
+          .carousel button i{
+            font-size: 1.9rem;
+          }
+
+          .principal .inicio{
+            margin-left: -290px;
+       
+        }
+        .principal .inicio a{
+            color: #04add8;
+            font-size: 1rem;
+          
+        }
+        .principal .inicio a i{
+         padding-right:3px ;
+         font-size: 1rem;
+          
+        }
+        .diseño{
+            height: 410px;
+        }
+
+        .contacto a{
+           width: 75%;
+           height: 162px;
+        }
+        .contacto i{
+            width: 40px;
+            height: 40px;
+            font-size: 2.3rem;
+            margin: 10px 0;
+            color: rgb(6, 178, 205);
+        
+        }
+        
+        .contacto a h3{
+        margin-bottom: 10px;
+        text-shadow: 1px 1px 2px rgba(3, 44, 52, 0.967);
+        }
+        .contacto a span{
+            margin: 6px 0;
+            letter-spacing: 0.5px;
+            text-shadow: 1px 1px 2px rgba(3, 44, 52, 0.927);
+            font-size: 1.1rem;
+        }
+        
+}
+
+   </style>
 </head>
 <body>
 
     <div class="principal">
-    <p>Aman</p>
+  <header>      
+  <img class="logo" src="imagenes/logo-aman.png" alt="foto">
+</header>
     <h1>SERVICIOS DIGITALES</h1>
     <h2>Convierte tus ideas digitales <br>
         en realidad.</h2>
 
-        <button><a href="community.html">Community manager</a></button>
-        <button><a href="diseños.html">Diseño UX/UI</a></button>
-        <button><a href="web.html">Página web</a></button>
-        <button><a href="contacto.html">Contacto</a></button>
+        <button class="link"><a href="community.html">Community manager</a></button>
+        <button class="link"><a href="diseños.html">Diseño UX/UI</a></button>
+        <button class="link"><a href="web.html">Página web</a></button>
+        <button class="link"><a href="contacto.html">Contacto</a></button>
     </div>
 
    
